@@ -6,7 +6,7 @@ import os
 import datetime
 
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/Users/abdulbasitayinla/Downloads/capstone-396019-e9a887417d07.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/Users/sadiqolowojia/Desktop/gcp_project/capstone-396019-e9a887417d07.json"
 
 def crypto_data(coin_name):
     url = f"https://api.coingecko.com/api/v3/coins/{coin_name}"
@@ -37,7 +37,7 @@ def crypto_data(coin_name):
     return data
 
 project_id = "capstone-396019"
-topic_id = "crypto-data"
+topic_id = "electric"
 
 publisher = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path(project_id, topic_id)

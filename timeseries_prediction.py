@@ -27,5 +27,5 @@ model = Prophet(daily_seasonality=True)
 model.fit(df)
 
 # save trained model
-with open('/Users/abdulbasitayinla/Downloads/predictmodel.pkl', 'wb') as model_file:
+with open('/Users/sadiqolowojia/Desktop/gcp_project/predictmodel.pkl', 'wb') as model_file:
     pickle.dump(model, model_file)
